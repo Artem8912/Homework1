@@ -11,7 +11,7 @@ int a = Convert.ToInt32(Console.ReadLine());
 int result = Thirddigit(a);
 if (a < 100)
 {
-    Console.WriteLine("Такой цифры нет");
+    Console.WriteLine("Третьей цифры нет");
 }
 else
 {
