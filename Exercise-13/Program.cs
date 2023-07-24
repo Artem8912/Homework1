@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int Thirddigit(int number)
+{
+    while (number > 999)
+    {
+        number = number / 10;
+    }
+    return (number % 100) % 10;
+}
+Console.WriteLine("Введите число");
+int a = Convert.ToInt32(Console.ReadLine());
+int result = Thirddigit(a);
+if (a < 100)
+{
+    Console.WriteLine("Такой цифры нет");
+}
+else
+{
+    Console.WriteLine($"Третья цифра равна {result} ");
+}
