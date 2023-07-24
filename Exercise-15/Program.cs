@@ -1,17 +1,10 @@
-﻿void Dayoftheweek(int number)
+﻿bool Dayoftheweek(int number)
 {
-    if(number == 6 || number == 7)
-    {
-           Console.WriteLine("Этот день - выходной"); 
-    }
-    else
-    {
-           Console.WriteLine("Этот день - не выходной");  
-    }
+    return number > 5;
 }
 
 Console.WriteLine("Введите номер дня недели");
 int a = Convert.ToInt32(Console.ReadLine());
-Dayoftheweek(a);
-
+bool result = Dayoftheweek(a);
+Console.WriteLine(result ? "Это выходной день" : "Это не выходной день");
 
